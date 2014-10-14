@@ -4,7 +4,7 @@ VIPApulseshaper
 Rayleigh-Sommerfeld scalar diffraction applied to a Virtually Imaged
 Phased Array pulse shaper.  For example output, see
 vipaps_fourier_plane.png, which shows the optical intensity (arb. dB
-units) at the Fourier plane of the pulse shaper.
+units) at the Fourier plane of the pulse shaper for monochromatic input with a wavelength of 815 nm (12270 cm^-1).
 
 This information about the field is a new result, and informs the way
 that high-resolution pulse shapers (for manipulating ultrafast laser
