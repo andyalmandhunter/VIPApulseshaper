@@ -16,17 +16,9 @@
 % A. Hunter, Tue Sep 10 22:25:49 MDT 2013
 function E1 = rs(E0, ds, dn, Si, Ni, Xi, Yi, z, k, theta, y0)
 
-    % Weight matrix for Simpson's Rule
-    w = 3 .\ [1 repmat([4 2],1,499) 4 1];
-    [w1, w2] = meshgrid(w, w);
-    W = w1 .* w2;
-% $$$     E0 = E0 .* W;
-
     % Calculate some necessary constants, and initial and final
     % matrices
     N = length(Si);
-% $$$     [n s] = meshgrid(Si, Ni);
-% $$$     [y x] = meshgrid(Xi, Yi);
     Xj = [Xi(1) - Si(N + 1 - (1:(N-1))) Xi((N:(2*N-1)) - N + 1) - Si(1)];
     Yj = [Yi(1) - Ni(N + 1 - (1:(N-1))) Yi((N:(2*N-1)) - N + 1) - Ni(1)];
     [Y, X] = meshgrid(Xj, Yj);
